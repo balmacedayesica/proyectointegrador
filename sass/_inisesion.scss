@@ -1,0 +1,17 @@
+.sesion-ini {
+    background-color: $color-primario;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.sesion {
+    font-size: 1.5rem;
+    height: 120vh;
+    background-image: url(../imagen/iniciarsesion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

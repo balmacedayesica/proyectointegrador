@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600&family=Fasthand&family=Fira+Sans+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@1,300&family=Manrope:wght@200;300;400;600;700;800&family=Oswald:wght@600&family=Overpass&family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+   
+}
+.logo {
+    width: 100px;
+    
+}
+header{ 
+   
+    background-color: white;
+    display: flex;
+    gap: 2px ;
+    grid-gap: 0px;
+    padding: 1rem;
+    font-size: 0.5rem;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    
+
+}
+
+.menu {
+    transition: 1.5s;
+    transform: scale(1.1);
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+
+}
+.menu__item a {
+
+    color:black;
+    background-color: white;
+    border: 0px solid black;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: background 2s;color: 3s;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.menu__item.active a{
+    /*text-decoration: underline;*/
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.menu__item a:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+.imagenprincipal {
+    height: 80vh;
+    background-image: url("../imagen/paginaprincipal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.imagenprincipal h2 {
+    color: black;
+    background-color: white;
+    padding-inline: 50px;
+
+}
+.imagenprincipal p{
+    color: black;
+    text-align: center;
+}
+.imagenproductos h3{
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    padding: 10px 20px;
+    transition: background 2s;color: 3s;
+    
+}
+
+
+.registrarse{
+    width: 180vh;
+    
+}
+.registrarse{
+    color: white;
+    font-size: 1.5rem;
+    height: 95vh;
+    background-image: url(../imagen/registrarse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.regis-inicio{
+    background-color: white;
+    color: black;
+    font-size: 1.5rem ;
+}
+.sesion-ini{
+    background-color: white;
+    color: black;
+    font-size: 1.5rem ;
+
+}
+.sesion{
+   font-size: 1.5rem ;
+   height: 120vh;
+   background-image: url(../imagen/iniciarsesion.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: center center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+}
+.tnosotros{
+
+   font-size: 1.6rem ;
+   background-color: white;
+   color: white;
+   height: 90vh;
+   background-image: url(../imagen/nnosotros.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position:right;
+   display:grid;
+   justify-content:center;
+   align-items:center;
+
+  
+  
+}
+
+.container-mayorista{
+    
+    font-size: 1.5rem ;
+   
+   
+
+}
+.accesoriosuno{
+    transition: 1s;
+}
+.accesoriosuno:hover{
+
+   transform: scale(1,1.5);
+
+}
+.accesoriosdos{
+    transition: 1s;
+}
+.accesoriosdos:hover{
+
+   transform: skew(30deg);
+
+}
+
+.accesoriostres:hover{
+
+   transform: scale(1,1.5);
+
+}
+
+
+.tarjetitas{
+    
+    font-size: 1.5rem;
+    transition: background 2s;color: 3s;
+}
+.tarjetitas{
+
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    
+    
+}
+.informacion {
+
+    padding: 10px 20px 30px;
+}
+
+
+.tarjetita__titulo::selection{
+  
+    background-color: lightsalmon;
+    
+}
+.tarjetita__texto::selection{
+  
+    background-color: lightcoral;
+    
+}
+.tarjetita__imagen:hover{
+    transform: translate(-10px, -20px);
+    
+}
+
+.tarjetita__imagen{
+    max-width: 30%;
+    padding: 30px;
+    
+}
+.tarjetita__boton{
+    display: flex;
+    gap: 1rem;
+    background-color: blue;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.tarjetita:hover .tarjetita__boton{
+    background-color: rgb(120, 43, 165);
+    flex: 1;
+    transition: 1s;
+}
+.tarjetita:hover .tarjetita__boton{
+    flex: 1s;
+
+}
+
+.footer::selection{
+    
+    background-color: aqua;
+    
+}
+.titulo h5 {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+    transition: background 2s;color: 3s;
+}
+.titulo2 p{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    padding: 0px 10px;
+    
+}
+
+.titulo2 p::selection{
+  
+    background-color: yellow;
+    
+}
+
+.columnas{
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    padding: 2rem;
+    display: flex;
+    width: 100%
+    
+   
+}
+.col{
+    
+  
+    width: 100%;
+}
+.col h6{
+    
+    font-size: 1.2rem ;
+   
+}
+
+.container{
+    background-color: white;
+    color: black;
+    flex-wrap: wrap;
+  
+
+  
+}
+.img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+/*
+.container-{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "puentes clavijas  cuerdas"
+    "fundas  correas   pines";
+}
+
+    
+.puentes{
+    
+    grid-area: puentes;
+    background-color:rgb(109, 194, 197);
+    
+}
+.clavijas{
+   
+    grid-area: clavijas;
+    background-color: rgb(60, 189, 194);
+   
+}
+.cuerdas{
+    
+    grid-area: cuerdas;
+    background-color:rgb(80, 183, 187);
+    
+}
+.fundas{
+    
+    grid-area: fundas;
+    background-color:rgb(84, 174, 177);
+    
+}
+.correas{
+   
+    grid-area: correas;
+    background-color:rgb(77, 167, 170);
+   
+}
+.pines{
+   
+    grid-area: pines;
+    background-color: rgb(43, 125, 128);
+    
+}
+.container- >div{
+    display: grid ;
+    place-items: center;
+} 
+
+
+esto siempre abajo de todo
+@media screen and (max-width:768px) {
+
+    .puentes {
+        background-color: rgb(221, 136, 127);
+        color: black;
+        
+
+   }
+    .clavijas{
+        background-color: rgb(204, 138, 130);
+        color: black;
+        
+
+   }
+    .cuerdas {
+        background-color: rgb(207, 106, 95);
+        color:black;
+        
+
+   }
+    .fundas{
+        background-color: rgb(211, 119, 109);
+        color: black;
+        
+
+   }
+    .correas{
+       background-color: rgb(216, 100, 87);
+       color: black;
+       
+   }
+    .pines{
+       background-color:rgb(223, 99, 85);
+       color: black;
+       
+   }
+}
+@media screen and (max-width: 768px) {
+    .container-{
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:repeat(2,1fr);
+        grid-template-areas: 
+        "puentes    clavijas   cuerdas"
+        "fundas     correas    pines"
+        
+        
+        
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .puentes {
+         background-color: rgb(207, 169, 119);
+         color: black;
+         
+
+    }
+    .clavijas {
+         background-color: rgb(199, 159, 107);
+         color: black;
+         
+
+    }
+    .cuerdas {
+         background-color: rgb(180, 140, 87);
+         color:black;
+         
+
+    }
+    .fundas {
+         background-color: rgb(161, 122, 70);
+         color: black;
+        
+    }
+    .correas{
+        background-color: rgb(138, 105, 63);
+        color: black;
+       
+    }
+    .pines{
+        background-color: rgb(116, 88, 53);
+        color: black;
+        
+    }
+ }
+ 
+ @media screen and (max-width: 480px){
+    .container-{
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "puentes"
+        "clavijas"
+        "cuerdas"
+        "fundas"
+        "correas"
+        "pines"
+
+    }*/
+    
+ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+.tnosotros {
+    font-size: 1.6rem;
+    background-color: white;
+    color: white;
+    background-image: url(../imagen/nnosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+@media screen and (max-width:768px){
+    .tnosotros p{
+        max-width: 70%;
+        padding: 30px;
+        
+    }
+    .tnosotros p{
+        font-size: 1rem;
+        padding: 15px 0px;
+    }
+    
+        
+    }

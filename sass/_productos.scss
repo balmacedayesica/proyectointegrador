@@ -1,0 +1,78 @@
+.tarjetitas{
+    
+    font-size: 1.5rem;
+    transition: background 2s;color: 3s;
+}
+.tarjetitas{
+
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    
+    
+}
+.informacion {
+
+    padding: 10px 20px 30px;
+}
+.tarjetita__titulo{
+    padding: 15px;
+    font-size: xx-large;
+}
+
+
+.tarjetita__titulo::selection{
+  
+    background-color: lightsalmon;
+    
+}
+.tarjetita__texto::selection{
+  
+    background-color: lightcoral;
+    
+}
+.tarjetita__imagen:hover{
+    transform: translate(-10px, -20px);
+    
+}
+
+.tarjetita__imagen{
+    max-width: 30%;
+    padding: 30px;
+    
+}
+.tarjetita__boton{
+    color: $color-primario;
+    display: flex;
+    gap: 1rem;
+    background-color: blue;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 15px;
+}
+
+.tarjetita:hover .tarjetita__boton{
+    background-color: rgb(120, 43, 165);
+    flex: 1;
+    transition: 1s;
+}
+.tarjetita:hover .tarjetita__boton{
+    flex: 1s;
+
+}
+@media screen and (max-width:768px){
+    .tarjetita__imagen{
+        max-width: 70%;
+        padding: 30px;
+        
+    }
+    .tarjetita__texto{
+        font-size: 1rem;
+        padding: 15px 0px;
+    }
+    
+        
+    }

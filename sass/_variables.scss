@@ -1,0 +1,15 @@
+/* variables */
+$color-primario: white;
+$fuente-textos:poppins; 
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente-textos;
+   
+}
+.titulos{
+    font-size: xx-large;
+    padding: 15px;
+    font-weight: bolder;
+}

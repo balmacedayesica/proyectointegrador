@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600&family=Fasthand&family=Fira+Sans+Condensed:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@1,300&family=Manrope:wght@200;300;400;600;700;800&family=Oswald:wght@600&family=Overpass&family=Poppins:wght@300;400&display=swap');
+
+/* variables */
+$color-primario: white;
+$fuente-textos:poppins; 
+
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente-textos;
+}
+
+.separador{
+    height: 8vh;
+}
+/* COMIENZO DEL HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+
+    height: 8vh;
+    width: 100%;
+    padding: 10px;
+    background-color: $color-primario;
+    box-shadow: #33333394 0 8px 15px;
+}
+
+.logo{
+    height: 100%;
+}
+
+.menu-icon {    
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.close-icon {
+
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 15px;
+    margin-left: 10px;
+    color: red;
+}
+
+.close-icon:hover {
+    text-shadow: rgba(255, 255, 255, 0.599) 0 0 20px;
+    border-radius: 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    left: -300px;
+
+    width: 300px;
+    height: 100vh;
+    padding-top: 15px;
+    background-color: #333;
+    transition: left 0.3s ease;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::before {
+    width: 100%;
+}
+
+#menu-toggle:checked~.menu {
+    left: 0;
+    display: block;
+}
+
+#menu-toggle {
+    display: none;
+}
+/* FIN DEL HEADER */
+
+.imagenprincipal {
+    height: 80vh;
+    background-image: url("../imagen/paginaprincipal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
